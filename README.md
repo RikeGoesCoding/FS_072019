@@ -1,7 +1,7 @@
 # FS_072019
 
 Date created
-05.07.2019
+05.07.2019 / 12:00:00
 
 Project Title
 Analysis Udacity bikeshare project
