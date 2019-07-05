@@ -1,5 +1,17 @@
 # FS_072019
-Project submission udacity
+Date created 05.07.2019
 
-Description Change 1
-First Update to the readme file in order to show change.
+Project Title
+Analysis Udacity bikeshare project
+
+Description
+This analysis frontend allows the user to analyis data from a bike provider (given by udacity) to analysis rental behaviour of different user throught 3 major cities in the US. The cities are chicago, New York City and Washington DC. It is possible to make 4 different type of analysis:
+1 - Rental Times
+2 - Info about Stations and Trip
+3 - Info about Rental durations
+4 - User Analysis
+
+Files used
+Following files used for the bikeshare.py project but included in the gitignore - chicago.csv new_york_city.csv washington.csv onsists python code for programming user interaction
+
+Credits Thanks to Udacity
