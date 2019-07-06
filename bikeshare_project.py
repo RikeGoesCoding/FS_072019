@@ -243,7 +243,7 @@ def analysis_type(df):
             elif analysis == 4:
                 user_stats(df)
             elif analysis == 5:
-                print(df.head())# show raw data of selected df
+                print(df.head(20))# show first 20 lines of raw data of selected df
             elif analysis == 6:
                 break
             else:
