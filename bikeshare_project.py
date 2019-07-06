@@ -126,7 +126,7 @@ def time_stats(df):
     most_common_hour = df['Start Time'].dt.hour.mode()[0]
     print('The most common start time was {} o\'clock.2'.format(most_common_hour))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+
     print('-'*40)
 
 
@@ -149,7 +149,7 @@ def station_stats(df):
     most_common_trip = df['Trip'].mode()[0]
     print('Most common trip is from {}.'.format(most_common_trip))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+
     print('-'*40)
 
 
@@ -169,7 +169,7 @@ def trip_duration_stats(df):
     mean_trip_duration = str(dt.timedelta(seconds=int(mean_trip_duration)))
     print('The average rental duration per trip was {}.'.format(mean_trip_duration))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+
     print('-'*40)
 
 
@@ -198,7 +198,7 @@ def user_stats(df):
     except:
         print('No gender data available')
     finally:
-        print("\nThis took %s seconds." % (time.time() - start_time))
+
         print('-'*40)
 
 
@@ -228,7 +228,7 @@ def analysis_type(df):
 
     while True:
         try:
-            analysis = int(input('To select the type of analysis please enter one of of the following numbers:\n1 - Rental Times\n2 - Info about Stations and Trips\n3 - Info about Rental durations\n4 - User Analysis\n5 - Show raw data \n6 - Stop analysis \nEnter value:'))
+            analysis = int(input('To select the type of analysis please enter one of of the following numbers:\n1 - t analysis\n2 - locations analysis\n3 - durations analysis\n4 - user analysis\n5 - Show raw data \n6 - Stop analysis \nEnter value:'))
         except:
             print('No valid data entry, please try again!\n')
         else:
@@ -241,7 +241,7 @@ def analysis_type(df):
             elif analysis == 4:
                 user_stats(df)
             elif analysis == 5:
-                print(df.head())# show raw data of selected df
+                print(df.head(20))# show first 20 lines of raw data of selected df
             elif analysis == 6:
                 break
             else:

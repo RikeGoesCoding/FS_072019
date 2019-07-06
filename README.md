@@ -2,10 +2,14 @@
 <<<<<<< HEAD
 
 Date created
+<<<<<<< HEAD
 05.07.2019
 =======
 Date created 05.07.2019
 >>>>>>> documentation
+=======
+05.07.2019 / 12:00:00
+>>>>>>> refactoring
 
 Project Title
 Analysis Udacity bikeshare project
