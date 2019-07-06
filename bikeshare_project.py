@@ -230,7 +230,7 @@ def analysis_type(df):
 
     while True:
         try:
-            analysis = int(input('To select the type of analysis please enter one of of the following numbers:\n1 - Rental Times\n2 - Info about Stations and Trips\n3 - Info about Rental durations\n4 - User Analysis\n5 - Show raw data \n6 - Stop analysis \nEnter value:'))
+            analysis = int(input('To select the type of analysis please enter one of of the following numbers:\n1 - t analysis\n2 - locations analysis\n3 - durations analysis\n4 - user analysis\n5 - Show raw data \n6 - Stop analysis \nEnter value:'))
         except:
             print('No valid data entry, please try again!\n')
         else:
