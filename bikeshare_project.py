@@ -126,7 +126,7 @@ def time_stats(df):
     most_common_hour = df['Start Time'].dt.hour.mode()[0]
     print('The most common start time was {} o\'clock.2'.format(most_common_hour))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+
     print('-'*40)
 
 
@@ -149,7 +149,7 @@ def station_stats(df):
     most_common_trip = df['Trip'].mode()[0]
     print('Most common trip is from {}.'.format(most_common_trip))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+
     print('-'*40)
 
 
@@ -169,7 +169,7 @@ def trip_duration_stats(df):
     mean_trip_duration = str(dt.timedelta(seconds=int(mean_trip_duration)))
     print('The average rental duration per trip was {}.'.format(mean_trip_duration))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+
     print('-'*40)
 
 
@@ -200,7 +200,7 @@ def user_stats(df):
     except:
         print('No gender data available')
     finally:
-        print("\nThis took %s seconds." % (time.time() - start_time))
+
         print('-'*40)
 
 
