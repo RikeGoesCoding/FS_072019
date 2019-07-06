@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import calendar as cl
 import datetime as dt
-
+# Data Source: These are data files provided by udacity
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -174,9 +174,7 @@ def trip_duration_stats(df):
 
 
 def user_stats(df):
-    """Displays statistics on bikeshare users.
-    Only those statistics are evaluated where data is available.
-    E.g. gender assessment is not possible for all data sets."""
+    """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
